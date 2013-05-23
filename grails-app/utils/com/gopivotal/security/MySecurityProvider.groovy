@@ -22,7 +22,8 @@ class MySecurityProvider implements SecurityBridge {
         if (princ instanceof String) {
             return null
         } else {
-            return princ?.identity   
+            //return princ?.identity   
+            return princ?.id
         }
     }
  
